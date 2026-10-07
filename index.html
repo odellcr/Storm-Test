@@ -57,7 +57,7 @@ const itEvents=[
  {t:"Identity Outage",d:"An Eye office cannot reliably authenticate users. Staff are sharing temporary local credentials.",choices:[
   ["Deploy centralized identity",()=>effect({money:-7000,security:5,eyeRep:5,tech:3}, "Central identity is online. Local credentials are being retired.", "IT")],
   ["Patch each workstation",()=>effect({money:-1800,security:-2,eyeRep:1}, "The outage is reduced, but the underlying management problem remains.", "IT")],
-  ["Escalate to government cyber authority",()=>effect({info:5,politicalRep:2,eyeRep:-1}, "Government security staff join the investigation.", "POLITICAL")]}],
+  ["Escalate to government cyber authority",()=>effect({info:5,politicalRep:2,eyeRep:-1}, "Government security staff join the investigation.", "POLITICAL")]},
  {t:"Portal Network Instability",d:"Portal telemetry shows increasing packet loss and magical instability.",choices:[
   ["Take the portal offline for maintenance",()=>effect({money:-3000,trade:-8,magic:5,security:5}, "The portal is safe, but commerce is disrupted.", "IT")],
   ["Keep it online and tune routing",()=>effect({money:-4500,trade:5,magic:-5,infrastructure:3}, "Trade continues while the system operates closer to its limits.", "IT")],
